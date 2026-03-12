@@ -1,0 +1,79 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px); /* Adjust based on your Navbar height */
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-card h1 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 28px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #002B5B;
+}
+
+.error-msg {
+  color: #ff4d4f;
+  font-size: 13px;
+  margin-top: 5px;
+  display: block;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #002B5B; /* Matching your Navbar blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #003a7a;
+}
+
+.footer-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-text a {
+  color: #002B5B;
+  text-decoration: none;
+  font-weight: bold;
+}

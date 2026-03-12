@@ -1,0 +1,64 @@
+.view-test-container {
+    padding: 40px;
+    background-color: #f4f7f9;
+    min-height: 100vh;
+    /* Use grid to center the main form on the page */
+    display: grid;
+    place-items: start center;
+}
+
+.questions-form {
+    width: 90%;
+    max-width: 950px;
+}
+
+.question-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    /* Remove Flex - Use Grid */
+    display: grid;
+    justify-items: start; /* Locks all internal items to the left */
+}
+
+.question-text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.options-container {
+    display: grid; /* Stack rows vertically */
+    grid-gap: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.option-row {
+    display: grid;
+    /* First column for radio button, second for text */
+    grid-template-columns: auto 1fr; 
+    align-items: center; /* Vertical alignment */
+    grid-gap: 12px; /* Horizontal space between radio and text */
+    width: 100%;
+}
+
+.option-row span {
+    font-size: 16px;
+    color: #555;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+.correct-answer {
+    width: 100%;
+    color: #28a745; 
+    font-weight: 600;
+    margin-top: 10px;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 15px;
+    text-align: left;
+}

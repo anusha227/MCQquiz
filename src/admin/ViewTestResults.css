@@ -1,0 +1,82 @@
+/* Container to center the results table on the page */
+.view-test-results-container {
+    padding: 40px;
+    background-color: #f4f7f9;
+    min-height: 100vh;
+    display: grid;
+    place-items: start center; /* Centers horizontally, starts from top */
+}
+
+.results-table-card {
+    background: white;
+    width: 95%;
+    max-width: 1100px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-top: 6px solid #002B5B; /* Matching your dashboard accent */
+}
+
+.page-title {
+    color: #002B5B;
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-align: left;
+}
+
+/* Table Styling */
+.results-table {
+    width: 100%;
+    border-collapse: collapse; /* Removes gaps between borders */
+    margin-top: 10px;
+}
+
+.results-table th {
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+}
+
+.results-table td {
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #555;
+    font-size: 15px;
+}
+
+/* Alternating row colors for better readability */
+.results-table tr:nth-child(even) {
+    background-color: #fafbfc;
+}
+
+.results-table tr:hover {
+    background-color: #f1f4f7; /* Subtle hover effect */
+}
+
+/* Percentage Badge Styling */
+.percentage-badge {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #e8f5e9;
+    color: #2e7d32; /* Green for score */
+}
+
+.no-data {
+    text-align: center;
+    padding: 30px;
+    color: #999;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .results-table-card {
+        padding: 15px;
+        overflow-x: auto; /* Adds scrollbar if table is too wide */
+    }
+}

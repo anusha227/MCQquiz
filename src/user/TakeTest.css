@@ -1,0 +1,27 @@
+.view-test-container {
+    padding: 40px;
+    background-color: #f4f7f9;
+    min-height: 100vh;
+    /* Using Grid to ensure the entire form area is perfectly centered */
+    display: grid;
+    place-items: start center; /* 'start' keeps it at the top, 'center' aligns horizontally */
+}
+
+.questions-form {
+    width: 90%; /* Using a percentage ensures it scales well */
+    max-width: 900px;
+    /* Margin auto acts as a backup to keep the form centered */
+    margin: 0 auto; 
+}
+
+.question-card {
+    background: white;
+    padding: 30px;
+    
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: grid;
+    justify-items: start; /* Keeps question text and options on the left */
+    width: 100%; /* Ensures the card fills the 900px max-width */
+}

@@ -1,0 +1,77 @@
+/* Main Page Container */
+.user-dashboard-bg {
+  padding: 40px;
+  background-color: #f4f7f9;
+  min-height: 100vh;
+  display: grid;
+  place-items: start center;
+}
+
+/* Updated Grid: Centers the tall vertical cards side-by-side */
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Updated Card: Vertical, tall, with accent border */
+.test-card {
+  background: white;
+  width: 320px; 
+  min-height: 300px; /* Maintains the tall look from your image */
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-top: 6px solid #002B5B; /* The navy blue top bar */
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+  display: block; /* Removed flex to stop automatic spacing */
+}
+
+.test-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Typography */
+.test-card h3 {
+  font-size: 22px;
+  color: #002B5B;
+  margin: 0 0 30px 0;
+  font-weight: 700;
+  text-align: left;
+}
+
+/* The Info section */
+.test-info {
+  margin-bottom: 30px; /* Controls the gap between text and button */
+}
+
+.test-info p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px; /* Small gap between Time and Description */
+  text-align: left;
+}
+
+/* Start Test Button: Placed directly under the text */
+.start-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #002B5B; 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block; /* Ensures it acts as a block element */
+}
+
+.start-btn:hover {
+  background-color: #004085;
+}
